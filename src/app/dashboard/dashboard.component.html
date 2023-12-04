@@ -1,0 +1,24 @@
+
+<div>
+    <h2 *ngIf="email">Email : {{email}}  </h2>
+    <h2 *ngIf="password">Password: {{password}} </h2>
+    <div class="container">
+        <h1>All Users</h1>
+    <table class="table mt-5 shadow">
+         <thead>
+            <tr>
+                <th>#</th>
+                <th>Username</th>
+                <th>Age</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let user of userDetails;let i=index;">
+                <td>{{i + 1}}</td>
+                <td>{{user.uname}}</td>
+                <td>{{user.age}} </td>
+            </tr>
+         </tbody>
+    </table>
+</div>
+</div>

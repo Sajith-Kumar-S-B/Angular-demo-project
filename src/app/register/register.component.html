@@ -1,0 +1,20 @@
+<div class="text-center container">
+    <h1> Registration form</h1>
+    <form class="w-50 border shadow p-5 rounded mx-auto mt-5">
+        <div class="mb-3">
+        <input class="form-control" placeholder="username" name="usename" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control" placeholder="email" name="email" type="text">
+            </div>
+            <div class="mb-3">
+                <input class="form-control" placeholder="password" name="password" type="password">
+                </div>
+                <div class="mb-3">
+                    <input (click)="register()" class="form-control btn btn-success"  type="submit" value="Register">
+                    <span>Already Registered <a routerLink="">Login</a></span>
+                    </div>
+    </form>
+   
+</div>
+
