@@ -11,6 +11,7 @@ export class DashboardComponent {
 
   email:string=""
   password:string=""
+  
   userDetails:any= [
     {uname:"max",age:25},
     {uname:"midhun",age:35},
@@ -20,8 +21,8 @@ export class DashboardComponent {
   ]
   constructor(private ds:DataService){
 
-    this.email =ds.email
-    this.password = ds.pswd
+    this.email = this.ds.email
+    this.password = this.ds.pswd
         
   }
 

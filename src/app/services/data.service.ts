@@ -7,7 +7,5 @@ export class DataService {
 
   email:string=""
   pswd:string=""
-  constructor(){
-    
-  }
+  constructor() { }
 }
